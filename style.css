@@ -1,0 +1,108 @@
+:root{
+    --white: #ffffff;
+    --blue: #1e90ff;
+    --darkblue: #00008b;
+    --purple: #9932cc;
+    --gray: gray;
+    --darker-blue: #1e1e1e;
+    --black: black;
+    --random-color: --random-color;
+    --darkgrey: #131313;
+}
+
+html{
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: var(--black);     */
+    background-color: transparent;    
+    padding: 10px;
+    min-height: 100vh;
+}
+
+/* ----------------------------FIRST SECTION-------------------------- */
+
+.section-title{
+    align-self: center;
+    
+}
+
+.section-title p{
+    margin: 5px auto;
+    padding: 5px;
+    text-align: center;
+    font-size: 4rem;
+    font-family: monospace;
+    font-weight: 900;
+    background: linear-gradient(to right, var(--blue), var(--darker-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    pointer-events: none;
+}
+
+.footer-link{
+    align-self: center;
+}
+
+.section-title p::selection{
+    display: none;
+}
+
+.footer-link p::selection{
+    display: none;
+}
+
+
+.layer3{
+    background-image: url('./bckg_top.svg'),url('./bckg_bottom.svg');
+    background-position: top right, bottom left; 
+    background-repeat:no-repeat; 
+    /* background-blend-mode: screen; */
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes background-pan2{
+    from{
+        background-position: 0% top;
+    }
+    
+    to{
+        background-position: 500% bottom;
+    }
+
+}
+
+.anime-1{
+    animation: background-pan2 100s linear infinite;
+    background-image: radial-gradient( 
+        circle,
+            var(--purple) 5%,
+            var(--darkblue) 35%,
+            var(--black) 60%
+
+    );
+    background-size: 500%;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+    padding: 0;
+}
+/* ----------------------------SECOND SECTION-------------------------- */
