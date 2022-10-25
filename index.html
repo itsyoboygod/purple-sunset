@@ -7,24 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Purple Sunset</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./rdm_notifi.js" defer type="text/javascript"></script> 
 </head>
 
 <body>
     <main>
         <div class="anime-1">
-            <section class="first section spacer layer3" id="first-section">
-                <!-- <div class="section-title hidden">
-                    <p>Purple Sunset</p>
-                </div>
-                
-                <div class="footer-link hidden">
-                    <p>by Marcus Aguiar</p>
-                </div> -->
-
+            <section class="first section spacer layer3 carousel" id="first-section">
                 <div class="tablet-wrapper">
                     <ul class="tablet grid widget">
                         <li>
-                            <div class="widget-header">    
+                            <div class="widget-header">
                                 <span>🌦</span>
                                 <p>weather</p>
                             </div>
@@ -53,25 +46,157 @@
                     </ul>
 
                     <ul class="tablet grid app">
-                        <li id="app" data-count="weather"><span>🌦</span></li>
-                        <li id="app" data-count="call"><span>📞</span></li>
-                        <li id="app" data-count="app3"><span>♻</span></li>
-                        <li id="app" data-count="app4"><span>☮</span></li>
-                        <li id="app" data-count="app5"><span>🌦</span></li>
+                        <li id="app" data-app="Weather"><span>🌦</span></li>
+                        <li id="app" data-app="Discord"><span><img src="./icons/icons8-discórdia.svg" /></span></li>
+                        <li id="app" data-app="Maps"><span><img src="./icons/icons8-google-maps.svg" /></span></li>
+                        <li id="app" data-app="App Store"><span><img src="./icons/icons8-app-store.svg" /></span></li>
+                        <li id="app" data-app="Facebook"><span><img src="./icons/icons8-facebook-novo.svg" /></span>
+                        </li>
 
-                        <li id="app" data-count="peach"><span>🍑</span></li>
-                        <li id="app" data-count="grape"><span>🍇</span></li>
-                        <li id="app" data-count="watermelon"><span>🍉</span></li>
-                        <li id="app" data-count="lemon"><span>🍋</span></li>
-                        <li id="app" data-count="appel"><span>🍎</span></li>
+                        <li id="app" data-app="Instagram"><span><img src="./icons/icons8-instagram.svg" /></span></li>
+                        <li id="app" data-app="Tik Tok"><span><img src="./icons/icons8-tiktok.svg" /></span></li>
+                        <li id="app" data-app="Twitter"><span><img src="./icons/icons8-twitter.svg" /></span></li>
+                        <li id="app" data-app="Youtube"><span><img
+                                    src="./icons/icons8-reproduzir-youtube.svg" /></span></li>
+                        <li id="app" data-app="Tumblr"><span><img src="./icons/icons8-tumblr.svg" /></span></li>
 
-                        <li id="app" data-count="lion"><span>🦁</span></li>
-                        <li id="app" data-count="wolf"><span>🐺</span></li>
-                        <li id="app" data-count="cat"><span>🐱</span></li>
-                        <li id="app" data-count="fox"><span>🦊</span></li>
-                        <li id="app" data-count="unicorn"><span>🦄</span></li>
+                        <li id="app" data-app="Linkedin"><span><img src="./icons/icons8-linkedin.svg" /></span></li>
+                        <li id="app" data-app="Messenger"><span><img
+                                    src="./icons/icons8-facebook-messenger.svg" /></span></li>
+                        <li id="app" data-app="Whatsapp"><span><img src="./icons/icons8-whatsapp.svg" /></span></li>
+                        <li id="app" data-app="Reddit"><span><img src="./icons/icons8-reddit.svg" /></span></li>
+                        <li id="app" data-app="Pinterest"><span><img src="./icons/icons8-pinterest.svg" /></span></li>
                     </ul>
+
+                    <!-- <ul class="tablet grid app2 bkg-blur">
+                        <li id="app" data-app="Pinterest"><span><img src="./icons/icons8-pinterest.svg"/></span></li>
+                        <li id="app" data-app="Pinterest"><span><img src="./icons/icons8-pinterest.svg"/></span></li>
+                        <li id="app" data-app="Pinterest"><span><img src="./icons/icons8-pinterest.svg"/></span></li>
+                        <li id="app" data-app="Pinterest"><span><img src="./icons/icons8-pinterest.svg"/></span></li>
+                        <li id="app" data-app="Pinterest"><span><img src="./icons/icons8-pinterest.svg"/></span></li>
+                    </ul> -->
                 </div>
+
+                <div class="tablet-wrapper">
+                    <ul class="tablet grid widget">
+                        <li>
+                            <div class="widget-header">
+                                <span>🌦</span>
+                                <p>weather</p>
+                            </div>
+                            <div class="widget-body">
+                                <span>🌦</span>
+                                <p>12<sup>o</sup>C</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="block-wrapper">
+                                <div class="block1 blocks">
+                                    <span><img src="./icons/icons8-apple-fitness.svg"/></span>
+                                </div>
+                                <div class="block2 blocks">
+                                    <span>Apple Fitness</span>
+                                </div>
+                                <div class="block3 blocks">
+                                    <span>+</span>
+                                </div>
+                                <div class="block4 blocks">
+                                   <span style="--order: 1">1</span>
+                                   <span style="--order: 2">2</span>
+                                   <span style="--order: 3">3</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>widget</li>
+                    </ul>
+
+                    <ul class="tablet grid app">
+                        <li id="weather" data-app="weather"><span>🌦</span></li>
+                        <li id="Discord" data-app="Discord"><span data-notifi="test"><img src="./icons/icons8-discórdia.svg" /></span></li>
+                        <li id="Maps" data-app="Maps"><span><img src="./icons/icons8-google-maps.svg" /></span></li>
+                        <li id="App" data-app="App Store"><span><img src="./icons/icons8-app-store.svg" /></span></li>
+                        <li id="app" data-app="Facebook"><span><img src="./icons/icons8-facebook-novo.svg" /></span></li>
+
+                        <li id="app" data-app="Instagram"><span><img src="./icons/icons8-instagram.svg" /></span></li>
+                        <li id="app" data-app="Tik Tok"><span><img src="./icons/icons8-tiktok.svg" /></span></li>
+                        <li id="app" data-app="Twitter"><span><img src="./icons/icons8-twitter.svg" /></span></li>
+                        <li id="app" data-app="Youtube"><span><img src="./icons/icons8-reproduzir-youtube.svg" /></span></li>
+                        <li id="app" data-app="Tumblr"><span><img src="./icons/icons8-tumblr.svg" /></span></li>
+
+                        <li id="app" data-app="Linkedin"><span><img src="./icons/icons8-linkedin.svg" /></span></li>
+                        <li id="app" data-app="Messenger"><span><img src="./icons/icons8-facebook-messenger.svg" /></span></li>
+                        <li id="app" data-app="Whatsapp"><span><img src="./icons/icons8-whatsapp.svg" /></span></li>
+                        <li id="app" data-app="Reddit"><span><img src="./icons/icons8-reddit.svg" /></span></li>
+                        <li id="app" data-app="Pinterest"><span><img src="./icons/icons8-pinterest.svg" /></span></li>
+                    </ul>
+
+                </div>
+
+
+                <div class="tablet-wrapper">
+                    <ul class="tablet grid widget">
+                        <li>
+                            <div class="widget-header">
+                                <span>🌦</span>
+                                <p>weather</p>
+                            </div>
+                            <div class="widget-body">
+                                <span>🌦</span>
+                                <p>12<sup>o</sup>C</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="block-wrapper">
+                                <div class="block1">
+                                    <span>🔋</span>
+                                </div>
+                                <div class="block2">
+                                    <span>2</span>
+                                </div>
+                                <div class="block3">
+                                    <span>+</span>
+                                </div>
+                                <div class="block4">
+                                    <span>4</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>widget</li>
+                    </ul>
+
+                    <ul class="tablet grid app">
+                        <li id="app" data-app="weather"><span>🌦</span></li>
+                        <li id="app" data-app="Discord"><span><img src="./icons/icons8-discórdia.svg" /></span></li>
+                        <li id="app" data-app="Maps"><span><img src="./icons/icons8-google-maps.svg" /></span></li>
+                        <li id="app" data-app="App Store"><span><img src="./icons/icons8-app-store.svg" /></span></li>
+                        <li id="app" data-app="Facebook"><span><img src="./icons/icons8-facebook-novo.svg" /></span>
+                        </li>
+
+                        <li id="app" data-app="Instagram"><span><img src="./icons/icons8-instagram.svg" /></span></li>
+                        <li id="app" data-app="Tik Tok"><span><img src="./icons/icons8-tiktok.svg" /></span></li>
+                        <li id="app" data-app="Twitter"><span><img src="./icons/icons8-twitter.svg" /></span></li>
+                        <li id="app" data-app="Youtube"><span><img
+                                    src="./icons/icons8-reproduzir-youtube.svg" /></span></li>
+                        <li id="app" data-app="Tumblr"><span><img src="./icons/icons8-tumblr.svg" /></span></li>
+
+                        <li id="app" data-app="Linkedin"><span><img src="./icons/icons8-linkedin.svg" /></span></li>
+                        <li id="app" data-app="Messenger"><span><img
+                                    src="./icons/icons8-facebook-messenger.svg" /></span></li>
+                        <li id="app" data-app="Whatsapp"><span><img src="./icons/icons8-whatsapp.svg" /></span></li>
+                        <li id="app" data-app="Reddit"><span><img src="./icons/icons8-reddit.svg" /></span></li>
+                        <li id="app" data-app="Pinterest"><span><img src="./icons/icons8-pinterest.svg" /></span></li>
+                    </ul>
+
+                </div>
+
+                <ul class="tablet grid app2 bkg-blur bottom-apps">
+                    <li id="app" data-app="Settings"><span><img src="./icons/icons8-settings.svg" /></span></li>
+                    <li id="app" data-app="Apple Pay"><span><img src="./icons/icons8-apple-pay.svg" /></span></li>
+                    <li id="app" data-app="Music"><span><img src="./icons/icons8-music.svg" /></span></li>
+                    <li id="app" data-app="icons8-phone"><span><img src="./icons/icons8-phone.svg" /></span></li>
+                    <li id="app" data-app="Pinterest"><span><img src="./icons/icons8-safari.svg   " /></span></li>
+                </ul>
+
 
             </section>
         </div>
